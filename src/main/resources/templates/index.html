@@ -6,6 +6,7 @@
 </head>
 <body>
     <h2>REST API webszolgáltatásai</h2>
+    <h3>Github <a href="https://github.com/hurig/clubsWebSerivice/tree/master" target="_blank">repository</a>: https://github.com/hurig/clubsWebSerivice/tree/master</h3>
 
     <table>
         <tr>
@@ -17,6 +18,31 @@
             <td>GET</td>
             <td><a href="/categories">/categories</a></td>
             <td>Kategóriák lisjáta</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/categories/1">/categories/{id}</a></td>
+            <td>Egy kategória</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/categories/1/clubs">/categories/{id}/clubs</a></td>
+            <td>Egy kategória szórakozó helyei</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/categories</td>
+            <td>Új kategróia létrehozása</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>/categories/{id}</td>
+            <td>Kategória törlése</td>
+        </tr>
+        <tr>
+            <td>PATCH</td>
+            <td>/categories/{id}/{agelimit}</td>
+            <td>Kategória módosítása (alsó korhatár)</td>
         </tr>
     </table>
 </body>
